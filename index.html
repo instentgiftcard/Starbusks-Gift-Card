@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks $170 Gift Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #8e44ad, #3498db);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 360px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff11;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            text-align: left;
+            margin-left: 10px;
+        }
+        .menu {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #fff;
+            border-radius: 5px;
+            color: #8e44ad;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+        .menu:hover {
+            background: #8e44ad;
+            color: #fff;
+        }
+        .offer-image {
+            max-width: 100%;
+            margin: 15px auto;
+            border-radius: 10px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .claim-now {
+            background: #ff6f61;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 15px auto;
+            display: inline-block;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        .claim-now:hover {
+            background: #d35400;
+        }
+        .description, .social-proof {
+            text-align: left;
+            margin: 10px 20px;
+        }
+        .social-proof {
+            margin-top: 20px;
+        }
+        .countdown {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #ffde59;
+        }
+        .popup {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000000dd;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu" onclick="window.location.href='https://optilinklock.com/1765778'">☰</div>
+    <div class="container">
+        <img class="offer-image" src="https://i.ibb.co/QH9sQdv/79a54ffc116d.webp" alt="Starbucks $170 Gift Card">
+        <button class="claim-now" onclick="window.location.href='https://optilinklock.com/1765778'">Claim Now</button>
+        <div class="countdown" id="countdown-timer">Offer ends in: 00:00:00</div>
+        <div class="description">
+            <p>🎉 Get your exclusive Starbucks $170 Gift Card now! Limited time only.</p>
+            <p>This gift card is perfect for your coffee cravings and makes a great gift!</p>
+        </div>
+        <div class="social-proof">
+            <p>4,578 people have already claimed this gift card!</p>
+            <p>See how others are enjoying their gift cards:</p>
+            <ul>
+                <li>"Absolutely love it!" - Sarah</li>
+                <li>"Perfect for my daily coffee fix." - John</li>
+                <li>"Fast and easy to claim." - Emily</li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup">4578 people already claimed this offer!</div>
+
+    <script>
+        // Countdown Timer
+        function startCountdown() {
+            const targetTime = new Date().getTime() + 3600 * 1000; // 1 hour from now
+            const timer = document.getElementById('countdown-timer');
+
+            setInterval(() => {
+                const currentTime = new Date().getTime();
+                const timeLeft = targetTime - currentTime;
+
+                if (timeLeft > 0) {
+                    const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+                    const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+                    const seconds = Math.floor((timeLeft / 1000) % 60);
+
+                    timer.textContent = `Offer ends in: ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                } else {
+                    timer.textContent = "Offer expired!";
+                }
+            }, 1000);
+        }
+        startCountdown();
+    </script>
+</body>
+</html>
